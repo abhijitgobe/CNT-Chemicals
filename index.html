@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CNT Chemicals</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='style.css'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/New folder/favicon.jpg" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<style>
+/* body design */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* navigation bar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 97%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight:100;
+    color: #333;
+    text-decoration: none;
+    margin-left: 100px;
+    position: sticky;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    position: sticky;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    position: sticky;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #26613c;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: sticky;
+}
+
+.nav-links a:hover {
+    background-color: #84bc86;
+    color: #f5f0f0;
+    position: sticky;
+}
+.upper_div{
+    background-color: rgb(77, 72, 72);
+    color:white;
+    height: 40px;
+    padding-top: 10px;
+   
+}
+.a1{
+    margin-left: 100px;
+    text-decoration: none;
+    color: white;
+}
+.a1:hover{
+    color: #73c591;
+}
+
+.wel_home{
+    width: 100%;
+    height: 800px;
+    background-image:url(https://wallpapercave.com/wp/wp2689248.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    position: absolute;
+
+}
+.wel_text{
+    width: 500px;
+    height: 500px;
+    margin: 150px 200px;
+    background-color: white;
+    border-radius: 80px 0px ;
+    position: relative;
+}
+.wel_text h1{
+    font-size:50px;
+    padding: 50px 0px 0px 50px;
+}
+.wel_text p{
+    font-size: 23px;
+    padding: 20px 10px 0 20px;
+}
+.wel_text button{
+    margin:  20px 10px 0 20px;
+    padding:  10px;
+    font-size:medium;
+    color: aliceblue;
+    background-color: rgb(120, 255, 48);
+    border-radius: 15px 15px;
+    border: 2px solid  rgb(120, 255, 48);
+}
+.about_info{
+    margin-top: 800px;
+    padding: 70px 50px 50px;
+    
+}
+.col2 p{
+    padding: 20px;
+    font-size: 19px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.frist_footer{
+    display: flex;
+    color: rgb(81, 80, 80);
+    border-bottom: 2px solid rgb(81, 80, 80);
+    margin: 150px 100px 10px 100px;
+}
+.div1{
+margin: 10px 10px;
+padding-right: 70px;
+border-right: 2px solid rgb(81, 80, 80);
+}
+.div2{
+    padding: 50px 20px;
+}
+.mid_footer{
+    background-color: black;
+    color: rgb(122, 120, 120);
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+.cart{
+ display: flex;
+ padding: 10px 10px 10px 10px;
+}
+.products{
+display: inline-block;
+padding: 10px 10px 10px 10px;
+}
+.products p{
+    text-align: center;
+    font-size: 25px;
+}
+.products button{
+    color: white;
+    font-size: 30px;
+    padding: 100px 95px ;
+    border-color: rgb(120, 255, 48);
+    border-radius: 10px;
+    background-color:rgb(120, 255, 48) ;
+}
+.products button:hover{
+     color: rgb(4, 138, 4);
+     text-decoration: underline;
+}
+
+/* footer div */
+footer{
+    background-color: #333;
+    color:rgb(180, 173, 173);
+    padding-bottom: 50px;
+}
+.footer_title{
+    display: flex;
+    margin-top: 10px;
+}
+.flogo{
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.flink{
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.footer_divs{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+.a2{
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(133, 127, 127);
+    line-height: 30px;
+}
+.a2:hover{
+    color: #73c591;
+}
+.get_in_touch{
+    margin-left: 10px;
+    display: block;
+    line-height: 10px;
+}
+.quick_linls{
+    margin-left: 10%;
+}
+.footer_img{
+    margin-left: 10%;
+    height: 200px;
+    width: 300px;
+}
+.copy_email{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+div{
+    animation-name: navanim;
+    animation-duration: 2s;
+    animation: navanim 2s ease 0.1s 1 alternate-reverse normal;
+}
+@keyframes navanim{
+   0%{
+        top: 0%;
+        /* left: 5%; */
+    }
+    25%{
+        top: 5%;
+        /* left: 10%; */
+    }
+    50%{
+        top: 10%;
+        /* left: 10%; */
+    }
+    /* 75%{
+        top: 15%;
+        /* left: 0%; */
+    
+    100%{
+        top: 0%;
+        left: 0%;}
+    
+}
+</style>
+</head>
+<body>
+    <div class="upper_div">
+        <a class="a1" href="#">
+            Have any question ? 
+        </a>
+       
+        <a class="a1" href="tel: +91 9818706905">
+            <i class="fa-solid fa-phone"> </i>  +91 9818706905
+        </a>
+
+        <a href="mailto:cntgloballink@gmail.com" class="a1">
+            <i class="fa-regular fa-envelope"> </i> cntgloballink@gmail.com
+        </a>
+
+    </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html"><img src="New folder/cntlogo.png"height="60px"width="250px"class="brand-logo"/></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CNT_AboutPage.html">About Us</a></li>
+                <li><a href="Our_ product.html">Our Products</a></li>
+                <li><a href="Cnt_Contact_us.html">Contact Us</a></li>
+                <li><a href="login.html">Log In</a></li>  
+                <li><a href="order.html">Order</a></li></ul>
+        </div>
+    </nav>
+        <section>
+            <div class="wel_home">
+                
+              <div class="wel_text">
+                <h1 >
+                    "Welcome To
+                    <span style="color: rgb(2, 248, 2);"> CNT Global Link</span> - Your Premium Source Of Authentic Indian Herbs & Spices"
+                </h1>
+                <p>-"Enhance Your Products with the Power of Nature`s Finest"</p>
+                <button data-toggle="dropdown-toggle" onclick="">Learn More</button>
+              </div>
+            </div>
+        </section>
+        <section>
+            <div class="about_info" >
+             <h1 style="font-size: 37px; text-align: center;">About <span style="color: rgb(13, 186, 13); ">Us</span></h1>
+             <p style="font-size: 19px; text-align: center ; padding-bottom: 10px;">We are involved in manufacturing, trade, and export of the following products categories:</p>
+           
+            <div style="display: flex;">
+                <div class="col1">
+                    <img src="New folder/Tholegrouplogo.jpg">
+                </div>
+                <div class="col2">
+                    <p><span style="color: rgb(13, 186, 13); ">CNT Global Link</span> is a growing import-export company of the Thole Group, with many years of experience in the field of agricultural trade, agricultural input and agricultural equipment manufacturing and a strong rural network.</p>
+                    <p>At <span style="color: rgb(13, 186, 13); ">CNT Global Link</span>  , we blend traditional wisdom with modern trade, bringing you the best of herbs and spices from the diverse terrain of India. As a proud part of the Thole Group, a trusted entity with a rich business legacy spanning nearly a century, we stand for quality, integrity, and service beyond compare.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section>
+            <div class="product">
+             <h1 style="font-size: 37px; text-align: center;">Our <span style="color: rgb(13, 186, 13); ">Products</span></h1>
+             <div class="cart">
+                <div class="products"><img src="New folder/whatapp_img1.jpg"><p>Herbs</p></div>
+                <div class="products"><img src="New folder/whatapp_img2.jpg"><p>Dried Flowers</p></div>
+                <div class="products"><img src="New folder/whatapp_img3.jpg"><p>Tablets and Capsules (Herbal)</p></div>
+                <div class="products"><img src="New folder/whatapp_img4.jpg"><p>Essential and Carrier Oils</p></div>
+             </div>
+             <div class="cart">
+                <div class="products"><img src="New folder/whatapp_img5.jpg"><p>Herbal Extracts</p></div>
+                <div class="products"><img src="New folder/whatapp_img6.jpg"><p>Spices</p></div>
+                <div class="products"><img src="New folder/whatapp_img7.jpg"><p>Ayurvedic Medicines</p></div>
+                <div class="products"> <button><a href="Our_ product.html">Know More</a></button></div>
+             </div>
+            </div>
+        </section>
+        <!-- footer div -->
+    <footer>
+
+        <div class="footer_title">
+            <div class="flogo">
+                <img src="New folder/cntlogo.png" style="height: 60px;width: 250px;">
+            </div>
+            <div class="flink">
+                 <p class="para">"CNT Global Link - Your Premium Source Of Authentic Indian Herbs & Spices"</p>
+            </div>
+        </div>
+        <div style="height: 4px;width: 100%;color: #9ef541;"><hr></div> 
+        <div class="footer_divs">
+        <div class="get_in_touch">
+            <strong style="font-size: larger;color: white;">Get In Touch</strong><br><br>
+            <p>
+                <a href="mailto:cntgloballink@gmail.com" class="a2">
+                    <i class="fa-regular fa-envelope"> </i> cntgloballink@gmail.com
+                </a>
+                <a class="a2" href="tel: +91 9818706905">
+                    <i class="fa-solid fa-phone"> </i>  +91 9818706905
+                </a>
+                <a class="a2">
+                    <i class="fa-solid fa-location-dot"></i> Address 1 - Sinhgad Road,Pune 411030,Maharashtra, India 
+                    </a>
+                <a class="a2"> 
+                    <i class="fa-solid fa-location-dot"></i> Address 2 - Godam Lane,Kopargaon 423601,Maharashtra, India
+                </a>
+        </div>
+        <div class="quick_linls">
+            <strong style="font-size: larger;color: white;">Quick Links</strong>
+            <a class="a2" href="index.html">  <i class="fa-solid fa-house"></i>  HOME</a>
+            <a class="a2" href="CNT_AboutPage.html">   <i class="fa-solid fa-bookmark"></i>  ABOUT US</a>
+            <a class="a2" href="Our_ product.html">  <i class="fa-solid fa-book"></i>  OUR PRODUCTS</a>
+            <a class="a2" href="Cnt_Contact_us.html"> <i class="fa-solid fa-phone"></i>  CONTACT US</a> 
+        </div>
+        <div class="footer_img">
+            <img class="footer_img" src="New folder/Tholegrouplogo.jpg">
+        </div>
+    </div>
+    <div class="copy_email">
+        <p>&#169 copyright 2024 Designed By <strong style="color: #9ef541;">GP Solapur Students</strong> </p>
+
+    </div>
+ </footer>
+</body>
+</html> 

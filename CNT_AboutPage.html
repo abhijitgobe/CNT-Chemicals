@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/New folder/favicon.jpg" type="image/x-icon">
+
+    <style>
+
+/* body design */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* navigation bar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 97%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight:100;
+    color: #333;
+    text-decoration: none;
+    margin-left: 100px;
+    position: sticky;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    position: sticky;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    position: sticky;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #26613c;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: sticky;
+}
+
+.nav-links a:hover {
+    background-color: #84bc86;
+    color: #f5f0f0;
+    position: sticky;
+}
+.upper_div{
+    background-color: rgb(77, 72, 72);
+    color:white;
+    height: 40px;
+    padding-top: 10px;
+   
+}
+
+/* middle part of about page */
+.a1{
+    margin-left: 100px;
+    text-decoration: none;
+    color: white;
+}
+.a1:hover{
+    color: #73c591;
+}
+.refimg1div{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.natimg1{
+    height: 450px;
+    width: 100%;
+}
+
+.main_body{
+    position: relative;
+    margin-bottom: 80px;
+
+}
+.firstdiv{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+   
+}
+.NFDiv{
+    height: 300px;
+    width:650px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.NFlogoimg{
+    height: 250px;
+    width: 250px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.p1{
+    text-align:left;
+    font-size:larger;
+    color: #726e6e;
+    margin-left: 30px;
+}
+.s1{
+    color: #8ABE53;
+    font-size: 250%;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+.refimg1div2{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.natimg2{
+    height: 450px;
+    width: 100%;
+}
+
+/* contact div */
+.Contactdiv{
+    position: relative;
+    
+}
+.contact_info{
+    position: absolute;
+    height: 500px;
+    width: 70%;
+    margin-left: 15%;
+    box-shadow:4px 4px 4px 8px rgba(0, 0, 0, 0.1) ;
+    margin-top: 0px;
+    margin-bottom: 20%;
+    background-color: white;
+}
+.contact_title{
+    color: #8ABE53;
+    font-size: 200%;
+    font-weight: 150;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+}
+.p2{
+    text-align:center;
+    font-size:larger;
+    color: #726e6e;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.button1 {
+    border-radius: 20px;
+    background-color: #8ABE53;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin-left: 45%;
+    font-size: larger;
+    
+}
+.button1 a {
+    color: white;
+    text-decoration: none;
+}
+.button1:hover{
+    background-color: #0dd13e;
+    color: #f6eeee;
+}
+.updown{
+    height: 30px;
+    width: 50px;
+    margin-top: 40%;
+    /* margin-right: 0px; */
+    margin-bottom: 20px;
+    margin-left: 95%;
+    position:relative;
+    background-color: #9ef541;
+    text-align: center;
+}
+
+/* footer div */
+footer{
+    background-color: #333;
+    color:rgb(180, 173, 173);
+    padding-bottom: 50px;
+}
+.footer_title{
+    display: flex;
+    margin-top: 10px;
+}
+.flogo{
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.flink{
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.footer_divs{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+.a2{
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(133, 127, 127);
+    line-height: 30px;
+}
+.a2:hover{
+    color: #73c591;
+}
+.get_in_touch{
+    margin-left: 10px;
+    display: block;
+    line-height: 10px;
+}
+.quick_linls{
+    margin-left: 10%;
+}
+.footer_img{
+    margin-left: 10%;
+    height: 200px;
+    width: 300px;
+}
+.copy_email{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+ <div>  
+    <div class="upper_div">
+        <a class="a1" href="#">
+            Have any question ? 
+        </a>
+       
+        <a class="a1" href="tel: +91 9818706905">
+            <i class="fa-solid fa-phone"> </i>  +91 9818706905
+        </a>
+
+        <a href="mailto:cntgloballink@gmail.com" class="a1">
+            <i class="fa-regular fa-envelope"> </i> cntgloballink@gmail.com
+        </a>
+
+    </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <img src="New folder/cntlogo.png"height="60px"width="250px"class="brand-logo"/>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CNT_AboutPage.html">About Us</a></li>
+                <li><a href="Our_ product.html">Our Products</a></li>
+                <li><a href="Cnt_Contact_us.html">Contact Us</a></li>
+                <li><a href="login.html">Log In</a></li>  
+                <li><a href="order.html">Order</a></li></ul>
+
+                </ul>
+        </div>
+    </nav>
+
+    <!-- starting img  -->
+    <div class="refimg1div">
+        <div class="pic1">
+        <img src="New folder/natimg.jpg"class="natimg1"/>
+        </div>
+    </div>
+
+ <div class="mainbodydiv">
+
+    <!-- welcome div -->
+    <div class="main_body">
+        <p style="font-size: 300%;margin: 0;margin-top: 10px;text-align: center;">Welcome to <strong style="color: #8ABE53;">Thole Group</strong></p>
+            <p style="text-align: center;font-size: larger;color: #524e4e;margin-bottom: 50px;margin-top: 5px;">We are a fifth-generation family business established in the 1920s</p>
+    </div>
+
+    <!-- first div -->
+    <div class="firstdiv">
+        <div class="NFDiv">
+        <strong class="s1">Nanuram Fandulal</strong>
+        <p class="p1">NF is the oldest company in the group started
+             in 1921 and primarily trades in jaggery, sugar, pulses, and seeds in the domestic market.
+             It operates from the Kopargaon taluka located in the Ahmednagar district of Maharashtra .</p>
+        </div>
+        <div class="NFPicDiv">
+            <img src="New folder/NFlogo.png"class="NFlogoimg"/>
+        </div>
+    </div>
+        
+    <!-- second div -->
+    <div class="firstdiv">
+        <div class="NFPicDiv">
+            <img src="New folder/SonaPoly.png"class="NFlogoimg"/>
+        </div>
+        <div class="NFDiv">
+            <strong class="s1">Sona Poly Plast
+            </strong>
+            <p class="p1">Established in 1981, Sona Poly has become a renowned brand for drip 
+                and sprinkler irrigation systems with a vast dealer and distributor network in Maharashtra. It is now rapidly expanding in Karnataka, Madhya Pradesh, 
+                Chhattisgarh, Tamil Nadu, Gujarat and Rajasthan.</p>
+        </div>
+    </div>
+
+    <!-- third div -->
+    <div class="firstdiv">
+        <div class="NFDiv">
+        <strong class="s1">Anand Pharma</strong>
+        <p class="p1">Anand Pharma is involved in the distribution of pharmaceutical products and has a strong network of retailers in the Ahmednagar
+             and Nashik districts of Maharashtra .</p>
+        </div>
+        <div class="NFPicDiv">
+            <img src="New folder/AnandPharma.jpg"class="NFlogoimg"/>
+        </div>
+    </div>
+
+     <!-- fourth div -->
+     <div class="firstdiv">
+        <div class="NFPicDiv">
+            <img src="New folder/SGVidyalaya.jpg"class="NFlogoimg"style="border-radius:50%"/>
+        </div>
+        <div class="NFDiv">
+            <strong class="s1">SG Vidyalaya</strong>
+            <p class="p1">SG Vidyalaya School, established in 1934, is a not-for-profit initiative of the Thole Group which today runs four schools in 
+                Kopargaon providing free of cost education to students</p>
+        </div>
+    </div>
+  </div>
+ </div>
+ 
+ <!-- ending image -->
+<div class="Contactdiv">
+    <div class="refimg1div2">
+       <div class="pic1">
+         <img src="New folder/natimg1.avif"class="natimg2"/>
+       </div>
+    </div>
+
+    <!-- contact div -->
+    <div class="contact_info">
+        <div class="contact_title">
+            <strong>CNT Global Link</strong>
+           <div style="height: 4px;width: 400px;color: #9ef541;margin-left: 30%;"><hr></div> 
+        </div>
+        <div class="contact_text">
+            <p class="p2">
+                CNT Global Link was born out of a deep-rooted commitment to empower Indian farmers and to contribute to the nation's growth through the potent avenue of exports. 
+                Leveraging the rich agricultural heritage of India, we chose to specialize in the export of herbs and spices, products that encapsulate India's unique edge in the global market.
+                <br><br>
+                The credibility and respect earned by the Thole Group over nearly a century of successful enterprise form the backbone of CNT Global Link. 
+                Our affiliation with the Thole Group not only provides us with a robust network across India but also instills trust in our partners. 
+                This good will enables us to source the finest quality Herbs and Spices from different regions of the country. Our strong sourcing capabilities,
+                coupled with our commitment to quality and service, put us in an exceptional position to meet our clients' demands reliably and consistently.
+                At CNT Global Link, we're not just about fulfilling your needs, we're about exceeding your expectations every time.
+                <br><br>
+            </p>
+            <button type="submit" class="button1"><a href="Cnt_Contact_us.html">Contact Us</a></button>
+    </div>
+    </div>
+</div>
+
+    <div class="updown">
+        <a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+    </div>
+
+    <!-- footer div -->
+    <footer>
+
+        <div class="footer_title">
+            <div class="flogo">
+                <img src="New folder/cntlogo.png" style="height: 60px;width: 250px;">
+            </div>
+            <div class="flink">
+                 <p class="para">"CNT Global Link - Your Premium Source Of Authentic Indian Herbs & Spices"</p>
+            </div>
+        </div>
+        <div style="height: 4px;width: 100%;color: #9ef541;"><hr></div> 
+        <div class="footer_divs">
+        <div class="get_in_touch">
+            <strong style="font-size: larger;color: white;">Get In Touch</strong><br><br>
+            <p>
+                <a href="mailto:cntgloballink@gmail.com" class="a2">
+                    <i class="fa-regular fa-envelope"> </i> cntgloballink@gmail.com
+                </a>
+                <a class="a2" href="tel: +91 9818706905">
+                    <i class="fa-solid fa-phone"> </i>  +91 9818706905
+                </a>
+                <a class="a2">
+                    <i class="fa-solid fa-location-dot"></i> Address 1 - Sinhgad Road,Pune 411030,Maharashtra, India 
+                    </a>
+                <a class="a2"> 
+                    <i class="fa-solid fa-location-dot"></i> Address 2 - Godam Lane,Kopargaon 423601,Maharashtra, India
+                </a>
+        </div>
+        <div class="quick_linls">
+            <strong style="font-size: larger;color: white;">Quick Links</strong>
+            <a class="a2" href="index.html">  <i class="fa-solid fa-house"></i>  HOME</a>
+            <a class="a2" href="CNT_AboutPage.html">   <i class="fa-solid fa-bookmark"></i>  ABOUT US</a>
+            <a class="a2" href="Our_ product.html">  <i class="fa-solid fa-book"></i>  OUR PRODUCTS</a>
+            <a class="a2" href="Cnt_Contact_us.html"> <i class="fa-solid fa-phone"></i>  CONTACT US</a> 
+        </div>
+        <div class="footer_img">
+            <img class="footer_img" src="New folder/Tholegrouplogo.jpg">
+        </div>
+    </div>
+    <div class="copy_email">
+        <p>&#169 copyright 2024 Designed By <strong style="color: #9ef541;">GPB Students Pvt. Ltd.</strong> </p>
+
+    </div>
+ </footer>
+</body>
+</html>
